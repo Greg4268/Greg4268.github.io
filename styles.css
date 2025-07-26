@@ -84,3 +84,39 @@
         width: 2px;
         background: #e9ecef;
       }
+
+
+.section-heading {
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+        
+        .skill-badge {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #495057;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-color: #6c757d;
+        }
+        
+        .card-description {
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .skills-container {
+            min-height: 180px;
+        }
