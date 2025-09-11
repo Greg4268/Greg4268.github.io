@@ -114,7 +114,10 @@ function generateTechBadges(repo) {
     AdoptAPet: ["C#", "JavaScript", "SQL", "HTML/CSS"],
     PacketSniffer: ["Python", "Scapy", "PySide6"],
     ArduinoBlindsController: ["C++", "Arduino", "3D Printing"],
+    RFIDAuthenticator: ["C++", "Arduino"],
     WiFi_Heatmap: ["Python", "NumPy", "Seaborn"],
+    realtime_chatapp: ["WebSocket", "Python", "Flask"],
+    leetcode: ["Data Structures & Algorithms"]
   };
 
   // Get tech stack for this repository

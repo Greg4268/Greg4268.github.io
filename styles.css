@@ -120,3 +120,15 @@
         .skills-container {
             min-height: 180px;
         }
+
+#comfortable-with {
+  background-color: #206ab4;
+}
+
+#go-to {
+  background-color: #b95cbe;
+}
+
+#exploring {
+  background-color: #20b488;
+}
