@@ -1,15 +1,15 @@
 function init() {
-  console.log("JS loading");
   getData();
 }
 
 let cardData;
 const favoriteProjects = [
-  "HIDFileTransfer",
-  "MoistureMonitor",
-  "PersonalNetworkPing",
-  "PacketSniffer",
+  "hid-arduino-file-offload-to-server",
+  "humidity-monitor-arduino-wifi",
+  "network-scanner-to-hilbert-curve",
+  "packet-sniffer-python",
   "WiFi_Heatmap",
+  "tree",
 ];
 
 async function getData() {
@@ -108,16 +108,19 @@ function loadProjects() {
 function generateTechBadges(repo) {
   // Map common repository names/topics to tech stacks
   const techMapping = {
-    HIDFileTransfer: ["PowerShell", "Flask", "Arduino", "Python", "C++"],
-    MoistureMonitor: ["Flask", "Arduino", "Python", "C++"],
-    PersonalNetworkPing: ["Python", "Netifaces", "NumPy", "Subprocess"],
+    "hid-arduino-file-offload-to-server": ["PowerShell", "Flask", "Arduino", "Python", "C++"],
+    "humidity-monitor-arduino-wifi": ["Flask", "Arduino", "Python", "C++"],
+    "network-scanner-to-hilbert-curve": ["Python", "Netifaces", "NumPy", "Subprocess"],
     AdoptAPet: ["C#", "JavaScript", "SQL", "HTML/CSS"],
-    PacketSniffer: ["Python", "Scapy", "PySide6"],
-    ArduinoBlindsController: ["C++", "Arduino", "3D Printing"],
-    RFIDAuthenticator: ["C++", "Arduino"],
+    "packet-sniffer-python": ["Python", "Scapy", "PySide6"],
+    "blinds-controller-arduino": ["C++", "Arduino", "3D Printing"],
+    "rfid-arduino-auth": ["C++", "Arduino"],
     WiFi_Heatmap: ["Python", "NumPy", "Seaborn"],
-    realtime_chatapp: ["WebSocket", "Python", "Flask"],
-    leetcode: ["Data Structures & Algorithms"]
+    leetcode: ["Data Structures & Algorithms"],
+    tree: ["Python", "Script"],
+    rm_cache: ["Python", "Script"],
+    "git-auto": ["Shell", "Script"],
+    "realtime-chatapp": ["WebSocket", "Python", "Flask"]
   };
 
   // Get tech stack for this repository
