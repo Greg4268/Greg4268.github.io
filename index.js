@@ -12,6 +12,14 @@ const favoriteProjects = [
   "tree",
 ];
 
+const excluded_projects = [
+  "emotion-reader-js",
+  "calorie-calculator-js",
+  "minecraft-bot-js",
+  "leetcode",
+  "emotion-reader-model-js"
+]
+
 async function getData() {
   const url = `https://api.github.com/users/Greg4268/repos`;
 
@@ -47,7 +55,8 @@ function loadProjects() {
     (repo) =>
       !repo.fork && // Exclude forked repositories
       repo.description && // Only include repos with descriptions
-      repo.name !== "Greg4268" // Exclude profile repository
+      repo.name !== "Greg4268" && // Exclude profile repository
+      !excluded_projects.includes(repo.name)
   );
 
   // Sort so favorites come first
