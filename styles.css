@@ -102,3 +102,12 @@ h1, h2 {
       font-size: 1.5em;
       margin-top: 0px; 
     }
+
+/* change highlight background color on page */
+/* Code Credit: Chris Coyier's Overriding The Default Text Selection Color With CSS */
+::selection {
+  background: #7b7878; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #7b7878; /* Gecko Browsers */
+}
