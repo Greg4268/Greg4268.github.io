@@ -1,3 +1,7 @@
+body {
+  font-family: 'San Francisco', -apple-system, Arial, sans-serif;
+}
+
 .hero-section {
         background-color: #f8f9fa;
         padding: 100px 0 60px;
@@ -25,6 +29,7 @@
       .tech-badge {
         background-color: #e9ecef;
         color: #212529;
+        font-family: 'San Francisco', -apple-system, Arial , sans-serif;
         font-size: 0.8rem;
         padding: 0.25rem 0.5rem;
         border-radius: 0.25rem;
@@ -48,6 +53,7 @@
       
       .social-icons a {
         color: white;
+        font-family: 'San Francisco', -apple-system, Arial , sans-serif;
         font-size: 1.5rem;
         margin-right: 15px;
       }
@@ -89,6 +95,7 @@
 .section-heading {
             margin-bottom: 3rem;
             font-weight: 600;
+            font-family: 'San Francisco', -apple-system, Arial , sans-serif;
         }
         
         .skill-badge {
