@@ -27,6 +27,11 @@ body {
     text-align: center;
 }
 
+#title {
+    text-align: center;
+    font-size: 25px;
+}
+
 #email {
     justify-content: center;
     font-size: 20px
@@ -45,10 +50,17 @@ body {
 a { 
     text-decoration: none;
     color: inherit;
+    backdrop-filter: blur(2px) saturate(70%);
+    border-radius: 10px;
+    padding: 1px 7px;
 }
 
 a:hover {
     background-color: white;
+}
+
+#ignore {
+    backdrop-filter: none;
 }
 
 #animatedBackground {
@@ -73,3 +85,18 @@ a:hover {
     background-position: -10000px 0;
   }
 }
+
+/* These are used for the title section if I choose to use it  */
+h1, h2 {
+      margin: 0; 
+      
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-top: 0px; 
+    }
