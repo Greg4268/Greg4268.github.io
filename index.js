@@ -17,7 +17,9 @@ const excluded_projects = [
   "calorie-calculator-js",
   "minecraft-bot-js",
   "leetcode",
-  "emotion-reader-model-js"
+  "emotion-reader-model-js",
+  "git-auto",
+  "realtime-chatapp"
 ]
 
 async function getData() {
@@ -93,13 +95,7 @@ function loadProjects() {
                         }" target="_blank" class="btn btn-sm btn-primary">
                             <i class="fab fa-github me-1"></i> View Code
                         </a>
-                        ${
-                          repo.homepage
-                            ? `<a href="${repo.homepage}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
-                            <i class="fas fa-external-link-alt me-1"></i> Live Demo
-                        </a>`
-                            : ""
-                        }
+                        
                     </div>
                 </div>
             </div>
