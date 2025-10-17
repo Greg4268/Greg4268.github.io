@@ -1,307 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregory</title>
     <link rel="stylesheet" href="./styles.css">
-    <title>Gregory Nuter - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./resources/img/favicon.png">
-  </head>
-  <body class="body-class">
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">Gregory Nuter</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-4 text-center mb-4 mb-lg-0">
-              <img src="./resources/img/memoji.jpg" alt="Gregory Nuter" class="profile-img">
-            </div>
-            <div class="col-lg-8">
-              <h1 class="display-4 fw-bold">Gregory Nuter</h1>
-              <h2 class="h3 text-secondary mb-3">MIS Graduate Student & Developer</h2>
-              <p class="lead mb-4">
-                I'm a passionate developer and MIS student focused on creating 
-                intuitive software and solving real-world problems through technology.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <a href="#projects" class="btn btn-primary btn-lg"> &lt;/&gt; My Work</a>
-                <a href="#contact" class="btn btn-outline-dark btn-lg">Get In Touch</a>
-                <a href="./GregNuterResume_Github_9_14.pdf" target="_blank" class="btn btn-outline-dark btn-lg" title="Download Resume">
-                  <i class="fas fa-download me-2"></i>Resume
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="py-5">
-        <div class="container">
-          <h2 class="text-center section-heading">Featured Projects</h2>
-          <div class="row g-4">
+    <link rel="stylesheet" href="./JetBrains-Mono.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+    <div id="animatedBackground">
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1 id="name">Gregory Nuter</h1>
+            <span id="links-span">
+                <a href="https://github.com/Greg4268" target="_blank">GitHub</a>
+                <a style="pointer-events: none"> | </a>
+                <a href="https://linkedin.com/in/gregnuter/" target="_blank">LinkedIn</a>
+            </span>
+            <br>
+            <span id="email">
+                <a href="mailto:hireme.backstage345@passinbox.com" target="_blank">hireme.backstage345@passinbox.com</a>
+            </span>
             
-            <!-- Projects go here  -->
-            
-          </div>
         </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center section-heading">Professional Experience</h2>
-          <div class="timeline">
-
-            <!-- Experience Item 1 -->
-            <div class="timeline-item">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h3 class="h4">Incoming Developer I</h3>
-                  <h4 class="h6 text-muted"><b>Wi-Tronix</b> | June 2026 - </h4>
-                  <ul>
-                  </ul>
-                  <div>
-                    <span class="tech-badge">C#</span>
-                    <span class="tech-badge">C++</span>
-                    <span class="tech-badge">SQL</span>
-                    <span class="tech-badge">Azure DevOps</span>
-                    <span class="tech-badge">Git</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Experience Item 2 -->
-            <div class="timeline-item">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h3 class="h4">Tech Lead</h3>
-                  <h4 class="h6 text-muted"><b>Walmart</b> | August 2025 - Present</h4>
-                  <ul>
-                    <li>Led team of 6 in developing automated certificate alert system for Masters program's capstone project</li>
-                    <li>Designed the system architecture and delegated technical tasks</li>
-                    <li>Collaborated directly with company stakeholders to gather requirements</li>
-                  </ul>
-                  <div>
-                    <span class="tech-badge">Power Automate Cloud</span>
-                    <span class="tech-badge">SharePoint</span>
-                    <span class="tech-badge">Venafi</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Experience Item 3 -->
-            <div class="timeline-item">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h3 class="h4">Software Developer Intern</h3>
-                  <h4 class="h6 text-muted"><b>Wi-Tronix</b> | May 2025 - August 2025</h4>
-                  <ul>
-                    <li>Developed and extended APIs by adding new endpoints to support enhanced application functionality</li>
-                    <li>Designed and implemented new APIs to deliver features aligned with evolving customer requirements</li>
-                    <li>Optimized existing microservice to significantly reduce redundant data transmission during RabbitMQ publishing</li>
-                    <li>Diagnosed and resolved bugs across service's web portal and underlying business logic, improving stability and user experience</li>
-                  </ul>
-                  <div>
-                    <span class="tech-badge">C#</span>
-                    <span class="tech-badge">C++</span>
-                    <span class="tech-badge">SQL</span>
-                    <span class="tech-badge">Azure DevOps</span>
-                    <span class="tech-badge">Git</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Experience Item 4 -->
-            <div class="timeline-item">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h3 class="h4">Software Developer Intern</h3>
-                  <h4 class="h6 text-muted"><b>Wi-Tronix</b> | May 2024 - August 2024</h4>
-                  <ul>
-                    <li>Refactored legacy code into modular, loosely coupled microservices to improve scalability and maintainability, with a focus on locomotive health monitoring</li>
-                    <li>Designed and implemented SQL stored procedures and new database tables to support evolving customer requirements and platform feature enhancements</li>
-                    <li>Identified and resolved bugs within the web portal interface</li>
-                    <li>Contributed to the design, development, testing, and deployment phases of the software development lifecycle, supporting the delivery of production-ready features</li>
-                  </ul>
-                  <div>
-                    <span class="tech-badge">C#</span>
-                    <span class="tech-badge">C++</span>
-                    <span class="tech-badge">SQL</span>
-                    <span class="tech-badge">Azure DevOps</span>
-                    <span class="tech-badge">Git</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="py-5">
-        <div class="container">
-          <h2 class="text-center section-heading">Education</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="card shadow mb-4">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-3 text-center mb-3 mb-md-0">
-                      <img src="./resources/img/scriptA.jpg" alt="University of Alabama" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-9">
-                      <h3 class="h4">Master of Science in Management Information Systems</h3>
-                      <h4 class="h6 text-muted">The University of Alabama | Expected Graduation: May 2026</h4>
-                      <p><strong>GPA:</strong> 3.8/4.0</p>
-                      <p><strong>Key Courses:</strong> 
-                        <ul>
-                          <li>System Analysis & Design</li>
-                          <li>Enterprise Application Development</li>
-                          <li>Enterprise Network & Security</li>
-                          <li>App Development for Data Driven Organizations</li>
-                          <li>Applied Cyber Security</li>
-                          <li>System Development / Implementation</li>
-                        </ul></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card shadow mb-4">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-3 text-center mb-3 mb-md-0">
-                      <img src="./resources/img/scriptA.jpg" alt="University of Alabama" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-9">
-                      <h3 class="h4">Bachelor of Science in Management Information Systems</h3>
-                      <h4 class="h6 text-muted">The University of Alabama | Expected Graduation: May 2026</h4>
-                      <p><strong>GPA:</strong> 3.8/4.0</p>
-                      <p><strong>Key Courses:</strong></p>
-                      <ul>
-                        <li>Business Programming I</li>
-                        <li>Business Programming II</li>
-                        <li>Database Administration</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              
-              <div class="card shadow">
-                <div class="card-body">
-                  <h3 class="h3">Certifications & Additional Education</h3>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <span><h3><img src="./resources/img/SaFe6Badge.png" height="50"> SAFe 6 Agilist</h3></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact CTA Section -->
-      <section id="contact" class="contact-cta py-5 bg-light">
-        <div class="container">
-          <div class="row text-center mb-5">
-            <div class="col-12">
-              <h2 class="display-4 fw-bold text-black">Let's Connect</h2>
-              <p class="lead text-black">Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
-            </div>
-          </div>
-          
-          <div class="row g-4 justify-content-center">
-            <!-- Email Contact -->
-            <div class="col-md-4">
-              <div class="card h-100 rounded-3 shadow contact-card text-center p-4">
-                <div class="card-body">
-                  <i class="fas fa-envelope contact-icon"></i>
-                  <h3 class="h4 mb-3">Email Me</h3>
-                  <p>The quickest way to reach me for any inquiries or collaboration opportunities.</p>
-                  <a href="mailto:hireme.backstage345@passinbox.com" class="btn btn-primary mt-3">
-                    <i class="fas fa-paper-plane me-2"></i>Email
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-          
-        </div>
-      </section>
-    </main>
-
-    <footer class="bg-dark text-white">
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <h3 class="h5">Gregory Nuter</h3>
-            <p>MIS Graduate Student & Software Developer</p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <h3 class="h5">Connect With Me</h3>
-            <div class="social-icons">
-              <a href="https://github.com/Greg4268" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </footer>
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-      <script src="./index.js"></script>
-      </body>
-      </html>
-      
+        <!-- <div class="main-content">
+        </div> -->
+    </div>
+</body>
+</html>
