@@ -1,8 +1,12 @@
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body { 
     font-family: "JetBrains Mono";
     background-color: #FAF9F6;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
