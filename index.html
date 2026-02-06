@@ -9,25 +9,55 @@
 </head>
 <body>
     <div id="animatedBackground">
-        <!-- only way to be faster is to reduce initial load < 14kb -> compress background image -->
     </div>
     <div class="container">
         <div class="content">
-            <h1 id="name">Gregory</h1>
+            <h1 id="name"></h1>
             <h2 id="title">Software Developer</h2>
             <br>
             <span id="links-span">
                 <a href="https://github.com/Greg4268" target="_blank">GitHub</a>
                 <a id="ignore">|</a>
-                <a href="https://github.com/Greg4268/WhitePaper" target="_blank">White Paper</a>
+                <a id="whitepaper" href="https://github.com/Greg4268/WhitePaper" target="_blank">White Paper</a>
                 <a id="ignore">|</a>
-                <a href="./resources/resumes/GregoryResume_PrivacyPreserving.pdf" target="_blank">Resume</a>
+                <a id="resume" href="#" target="_blank">Resume</a>
             </span>
             <br>
             <span id="email">
-                <a href="mailto:hireme.backstage345@passinbox.com" target="_blank">hireme.backstage345@passinbox.com</a>
+                <a id="mail" href="#"></a>
             </span>
         </div>
     </div>
+    <script>
+        const nameB64 = "R3JlZ29yeSBOdXRlcg==";
+        document.getElementById("name").textContent = atob(nameB64);
+    
+        const encoded = "aHR0cHM6Ly93d3cuZ3JlZ2RldmVsb3BzLmNvbS9yZXNvdXJjZXMvcmVzdW1lcy9HcmVnb3J5UmVzdW1lX1ByaXZhY3lQcmVzZXJ2aW5nLnBkZg==";
+        const url = atob(encoded);
+        document.getElementById("resume").addEventListener("click", (e) => {
+            e.preventDefault();
+            const w = window.open('', '_blank');
+            w.location.href = url; 
+            w.focus();
+        });
+    </script>
+    <script>
+        // set text to email 
+        const emailB64 = "aGlyZW1lLmJhY2tzdGFnZTM0NUBwYXNzaW5ib3guY29t";
+        document.getElementById("mail").textContent = atob(emailB64);
+
+        const user = atob("aGlyZW1lLmJhY2tzdGFnZTM0NQ==");  
+        const domain = "passinbox.com";
+        const subject = "Contact from site";
+        
+        // set mailto to email 
+        document.getElementById("mail").onclick = function(e) {
+            e.preventDefault();
+            const mailto = `mailto:${user}@${domain}?subject=${encodeURIComponent(subject)}`;
+            const w = window.open('', '_blank');
+            w.location.href = mailto;
+            w.focus();
+        };
+  </script>
 </body>
 </html>
