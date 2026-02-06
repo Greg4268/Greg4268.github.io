@@ -29,35 +29,21 @@
         </div>
     </div>
     <script>
-        const nameB64 = "R3JlZ29yeSBOdXRlcg==";
-        document.getElementById("name").textContent = atob(nameB64);
-    
-        const encoded = "aHR0cHM6Ly93d3cuZ3JlZ2RldmVsb3BzLmNvbS9yZXNvdXJjZXMvcmVzdW1lcy9HcmVnb3J5UmVzdW1lX1ByaXZhY3lQcmVzZXJ2aW5nLnBkZg==";
-        const url = atob(encoded);
+        document.getElementById("name").textContent = atob("R3JlZ29yeSBOdXRlcg==");
+        document.getElementById("mail").textContent = atob("aGlyZW1lLmJhY2tzdGFnZTM0NUBwYXNzaW5ib3guY29t");
         document.getElementById("resume").addEventListener("click", (e) => {
             e.preventDefault();
             const w = window.open('', '_blank');
-            w.location.href = url; 
+            w.location.href = atob("aHR0cHM6Ly93d3cuZ3JlZ2RldmVsb3BzLmNvbS9yZXNvdXJjZXMvcmVzdW1lcy9HcmVnb3J5UmVzdW1lX1ByaXZhY3lQcmVzZXJ2aW5nLnBkZg=="); 
             w.focus();
         });
-    </script>
-    <script>
-        // set text to email 
-        const emailB64 = "aGlyZW1lLmJhY2tzdGFnZTM0NUBwYXNzaW5ib3guY29t";
-        document.getElementById("mail").textContent = atob(emailB64);
-
-        const user = atob("aGlyZW1lLmJhY2tzdGFnZTM0NQ==");  
-        const domain = "passinbox.com";
-        const subject = "Contact from site";
-        
-        // set mailto to email 
         document.getElementById("mail").onclick = function(e) {
             e.preventDefault();
-            const mailto = `mailto:${user}@${domain}?subject=${encodeURIComponent(subject)}`;
+            const mailto = `mailto:${atob("aGlyZW1lLmJhY2tzdGFnZTM0NQ==")}@${"passinbox.com"}?subject=${encodeURIComponent("Contact from site")}`;
             const w = window.open('', '_blank');
             w.location.href = mailto;
             w.focus();
         };
-  </script>
+    </script>
 </body>
 </html>
