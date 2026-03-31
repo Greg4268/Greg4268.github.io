@@ -23,14 +23,14 @@
                 <a id="resume" href="#" target="_blank">Resume</a>
             </span>
             <br>
-            <span id="email">
+            <!-- <span id="email">
                 <a id="mail" href="#"></a>
-            </span>
+            </span> -->
         </div>
     </div>
     <script>
         document.getElementById("name").textContent = atob("R3JlZ29yeSBOdXRlcg==");
-        document.getElementById("mail").textContent = atob("aGlyZW1lLmJhY2tzdGFnZTM0NUBwYXNzaW5ib3guY29t");
+        document.getElementById("mail").textContent = atob("");
         document.getElementById("resume").addEventListener("click", (e) => {
             e.preventDefault();
             const w = window.open('', '_blank');
@@ -39,7 +39,7 @@
         });
         document.getElementById("mail").onclick = function(e) {
             e.preventDefault();
-            const mailto = `mailto:${atob("aGlyZW1lLmJhY2tzdGFnZTM0NQ==")}@${"passinbox.com"}?subject=${encodeURIComponent("Contact from site")}`;
+            const mailto = `mailto:${atob("c25hcC5lbmNsb3NlNTE5")}@${"passinbox.com"}?subject=${encodeURIComponent("Contact from site")}`;
             const w = window.open('', '_blank');
             w.location.href = mailto;
             w.focus();
