@@ -20,7 +20,7 @@
                 <a id="ignore">|</a>
                 <a id="whitepaper" href="https://github.com/Greg4268/white-paper" target="_blank">White Paper</a>
                 <a id="ignore">|</a>
-                <a id="resume" href="#" target="_blank">Resume</a>
+                <a id="resume" href="./resources/resumes/GregoryResume_GitHub.pdf" target="_blank">Resume</a>
             </span>
             <br>
             <!-- <span id="email">
@@ -31,12 +31,12 @@
     <script>
         document.getElementById("name").textContent = atob("R3JlZ29yeSBOdXRlcg==");
         document.getElementById("mail").textContent = atob("");
-        document.getElementById("resume").addEventListener("click", (e) => {
-            e.preventDefault();
-            const w = window.open('', '_blank');
-            w.location.href = atob("aHR0cHM6Ly93d3cuZ3JlZ2RldmVsb3BzLmNvbS9yZXNvdXJjZXMvcmVzdW1lcy9HcmVnb3J5UmVzdW1lX0dpdEh1Yi5wZGY="); 
-            w.focus();
-        });
+        // document.getElementById("resume").addEventListener("click", (e) => {
+        //     e.preventDefault();
+        //     const w = window.open('', '_blank');
+        //     w.location.href = atob("aHR0cHM6Ly93d3cuZ3JlZ2RldmVsb3BzLmNvbS9yZXNvdXJjZXMvcmVzdW1lcy9HcmVnb3J5UmVzdW1lX0dpdEh1Yi5wZGY="); 
+        //     w.focus();
+        // });
         document.getElementById("mail").onclick = function(e) {
             e.preventDefault();
             const mailto = `mailto:${atob("c25hcC5lbmNsb3NlNTE5")}@${"passinbox.com"}?subject=${encodeURIComponent("Contact from site")}`;
