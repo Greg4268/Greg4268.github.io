@@ -1,49 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gregory</title>
-    <link rel="stylesheet" href="./styles.min.css">
-    <link rel="icon" href="./resources/images/g_favicon.webp" type="image/x-icon">
-</head>
-<body>
-    <div id="animatedBackground">
-    </div>
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link
+      rel="icon"
+      href="./resources/images/g_favicon.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="animatedBackground"></div>
     <div class="container">
-        <div class="content">
-            <h1 id="name"></h1>
-            <h2 id="title">Backend Developer</h2>
-            <br>
-            <span id="links-span">
-                <a href="https://github.com/Greg4268" target="_blank">GitHub</a>
-                <a id="ignore">|</a>
-                <a id="whitepaper" href="https://github.com/Greg4268/white-paper" target="_blank">White Paper</a>
-                <a id="ignore">|</a>
-                <a id="resume" href="./resources/resumes/GregoryResume_GitHub.pdf" target="_blank">Resume</a>
-            </span>
-            <br>
-            <span id="email">
-                <a id="mail" href="#"></a>
-            </span>
-        </div>
+      <div class="content">
+        <h1 id="name"></h1>
+        <h2 id="title">Backend Developer</h2>
+        <br />
+        <span id="links-span">
+          <a href="https://github.com/Greg4268" target="_blank">GitHub</a>
+          <a id="ignore">|</a>
+          <a
+            id="whitepaper"
+            href="https://github.com/Greg4268/white-paper"
+            target="_blank"
+            >White Paper</a
+          >
+          <a id="ignore">|</a>
+          <a
+            id="resume"
+            href="./resources/resumes/GregoryResume_GitHub.pdf"
+            target="_blank"
+            >Resume</a
+          >
+        </span>
+        <br />
+        <span id="email">
+          <a id="mail" href="#"></a>
+        </span>
+      </div>
     </div>
     <script>
-        document.getElementById("name").textContent = atob("R3JlZ29yeSBOdXRlcg==");
-        document.getElementById("mail").textContent = atob("aGlyZW1lLmJhY2tzdGFnZTM0NUBwYXNzaW5ib3guY29t");
-        // document.getElementById("resume").addEventListener("click", (e) => {
-        //     e.preventDefault();
-        //     const w = window.open('', '_blank');
-        //     w.location.href = atob("aHR0cHM6Ly93d3cuZ3JlZ2RldmVsb3BzLmNvbS9yZXNvdXJjZXMvcmVzdW1lcy9HcmVnb3J5UmVzdW1lX0dpdEh1Yi5wZGY="); 
-        //     w.focus();
-        // });
-        document.getElementById("mail").onclick = function(e) {
-            e.preventDefault();
-            const mailto = `mailto:${atob("aGlyZW1lLmJhY2tzdGFnZTM0NQ==")}@${"passinbox.com"}?subject=${encodeURIComponent("Contact from site")}`;
-            const w = window.open('', '_blank');
-            w.location.href = mailto;
-            w.focus();
-        };
+      document.getElementById("name").textContent = atob(
+        "R3JlZ29yeSBOdXRlcg==",
+      );
+      const mail = atob("aGlyZW1lLmJhY2tzdGFnZTM0NUBwYXNzaW5ib3guY29t");
+      document.getElementById("mail").textContent = mail;
+      document.getElementById("mail").onclick = function (e) {
+        e.preventDefault();
+        const mailto = `mailto:${mail}?subject=${encodeURIComponent("Contact from site")}`;
+        window.location.href = mailto;
+      };
     </script>
-</body>
+  </body>
 </html>
